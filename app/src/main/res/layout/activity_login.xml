@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.zx.aopdemo.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择登录状态"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/login_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/login_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+        <RadioButton
+            android:id="@+id/without_login_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="未登录" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/my_attention_tv"
+        style="@style/login_item_style"
+        android:text="我的关注" />
+
+    <TextView
+        android:id="@+id/my_foot_print_tv"
+        style="@style/login_item_style"
+        android:text="我的足迹" />
+
+    <TextView
+        android:id="@+id/my_shopping_cart_tv"
+        style="@style/login_item_style"
+        android:text="我的购物车" />
+
+
+</LinearLayout>
